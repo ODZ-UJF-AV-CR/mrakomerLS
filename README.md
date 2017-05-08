@@ -1,2 +1,2 @@
 # mrakomerLS
-Data processing from Mrakomet at Lomnicky stit
+Data processing from Mrakomer at Lomnicky stit
