@@ -13,7 +13,7 @@ import math
 from pymlab import config
 
 
-time.sleep(30)	# delay for initialising RS232/USB convertor
+time.sleep(5)	# delay for initialising RS232/USB convertor
 
 def handle_data(data):
 	print data,
@@ -59,7 +59,6 @@ while True:
 			if (len(values) == 18):
 				(t1, p1) = alt.get_tp()
 				#print values,
-				if (t1 > 255
 				handle_data(str(time.time()) + ','
 				+ values[1] + ',' 
 				+ str(round(t1,2)) + ',' 
