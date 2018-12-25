@@ -13,7 +13,7 @@
 
 [ ! -f /etc/ssh/ssh_host_rsa_key ] && dpkg-reconfigure openssh-server
 
-su odroid -c "python /home/odroid/git/mrakomerLS/bat/gps.py"
+su odroid -c "python /home/odroid/git/mrakomerLS/bat/gps.py" >/home/odroid/mrakomer/station/time.log 2>/home/odroid/mrakomer/station/time.log &
 
 su odroid -c "python /home/odroid/git/mrakomerLS/bat/mrakomer.py" >/dev/null 2>/home/odroid/mrakomer/station/error.log &
 
